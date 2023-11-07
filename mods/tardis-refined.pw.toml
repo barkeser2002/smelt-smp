@@ -1,0 +1,13 @@
+name = "TARDIS Refined"
+filename = "FORGE - TARDIS Refined v1-1.19.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b2e5767bd0c4f99b6b4f0b06408b1f074b31b1cd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4584357
+project-id = 782697

@@ -1,0 +1,13 @@
+name = "Create: Haven Qualities"
+filename = "create_haven-0.0.4-1.19.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9476b0a03a40e1486f0d9287e89dbc4c210d23ca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4769118
+project-id = 895548

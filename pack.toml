@@ -1,0 +1,13 @@
+name = "S.M.E.L.T SMP"
+author = "baris_keser"
+version = "1.0.2"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "e294069f19c49390e0a2d3c33d1aa4cc674808f60516c29a147fe0d3fcbb89a8"
+
+[versions]
+forge = "43.3.2"
+minecraft = "1.19.2"

@@ -1,0 +1,53 @@
+{
+	id: "29A5C8095029EF0D"
+	group: ""
+	order_index: 0
+	filename: "temeller"
+	title: "Temeller"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Başlangıç Hediyesi"
+			x: -13.0d
+			y: -1.0d
+			description: [
+				"Başlangıç Hediyemiz "
+				"Paxeller hertürlü aletin yerini alabilir ve dayanıklıkları 2 katıdır"
+			]
+			id: "517C766E9F76BE85"
+			tasks: [{
+				id: "76B8305974AAB407"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "37525902141F1920"
+				type: "item"
+				item: {
+					id: "mekanismtools:osmium_paxel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -11.0d
+			y: -1.0d
+			id: "31801931F8160363"
+		}
+	]
+	quest_links: [ ]
+}

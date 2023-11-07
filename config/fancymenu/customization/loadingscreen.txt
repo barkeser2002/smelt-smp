@@ -1,0 +1,107 @@
+type = menu
+
+customization-meta {
+  identifier = de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = fancyui/bg.jpeg
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = bottom-left
+  hidden = false
+  original_pos_size_calculation = false
+  x = 5
+  width = 91
+  action = deep_customization_element:drippy_overlay_logo
+  actionid = b997a2d3-7fa5-4685-99b8-1a80ee08f0341698136530931
+  y = -30
+  height = 25
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = -1000000
+  width = 0
+  action = deep_customization_element:drippy_overlay_background
+  actionid = 51c7764a-f2ea-4cc1-92cc-e1ddfd7faaa31698136530933
+  y = -1000000
+  height = 0
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  original_pos_size_calculation = true
+  x = 97
+  width = 284
+  action = deep_customization_element:drippy_overlay_progress_bar
+  actionid = 27fddeff-444b-4953-a8ea-61b95364b89e1698136530933
+  y = 232
+  height = 10
+}
+
+customization {
+  orientation = bottom-centered
+  background_texture = fancyui/bar.png
+  bar_texture = fancyui/barfil.png
+  progress_for_element_orientation = false
+  background_color = #ABC8F7
+  x = -177
+  width = 355
+  bar_color = #5295FF
+  action = custom_layout_element:drippy_custom_loading_bar
+  actionid = 68382d9c-8c36-4135-a55b-459f2f3201321698136567316
+  y = -67
+  direction = right
+  height = 20
+}
+
+customization {
+  path = fancyui/logo.png
+  orientation = mid-centered
+  x = -50
+  width = 100
+  action = addtexture
+  actionid = 055164db-a07d-4074-b61c-a8c0b08e16f91698136694606
+  y = -78
+  height = 101
+}
+
+customization {
+  path = 
+  orientation = top-left
+  x = 0
+  width = 0
+  action = addtexture
+  actionid = ad82617e-38f4-4758-90e3-85fc5721464c1698136777098
+  y = 10
+  height = 100
+}
+
+customization {
+  orientation = mid-centered
+  loop = true
+  channel = player
+  x = -224
+  width = 50
+  audio_source:2f0c6bd7-4c4b-401f-b57b-c6d72ccdc2311698139092688 = fancyui/bg.ogg;EXTERNAL_LOCAL;62;0
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = c91b9ca1-f3c2-43fd-954a-907f767c321c1698139296846
+  y = -109
+  once_per_session = false
+  height = 50
+}
+

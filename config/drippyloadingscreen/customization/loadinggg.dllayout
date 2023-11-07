@@ -1,0 +1,73 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = false
+  backgroundimage = fancyui/bg.jpeg
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  visible = false
+  action = editlogo
+}
+
+customization {
+  visible = false
+  action = editprogressbar
+}
+
+customization {
+  path = fancyui/logo.png
+  orientation = mid-centered
+  x = 0
+  width = 100
+  action = addtexture
+  actionid = f8d915e4-f751-46bc-94df-983ef9e479ec1674085333466
+  y = -34
+  height = 100
+}
+
+customization {
+  orientation = mid-centered
+  bartexture = fancyui/barfil.png
+  x = 0
+  width = 295
+  actionid = 28a08d44-9404-4274-9486-041aacd868f91674085352575
+  y = 63
+  action = addcustomprogressbar
+  backgroundtexture = fancyui/bar.png
+  height = 10
+  direction = right
+  barcolor = #ffffff
+  backgroundcolor = #5c5c5c80
+}
+
+customization {
+  orientation = mid-centered
+  shadow = false
+  x = 0
+  textcolor = #ffffff
+  action = addtext
+  actionid = 2efaaa4e-288c-41f1-b6b1-d3d805e7a7bf1674085531828
+  y = 51
+  scale = 1.0
+  alignment = left
+  value = %loadingprogress%
+}
+
+customization {
+  orientation = top-right
+  shadow = true
+  x = 0
+  textcolor = #ffffff
+  action = addtext
+  actionid = e2c72b7f-579b-4cef-a880-2f5e70c9cc521674085573148
+  y = 1
+  scale = 1.0
+  alignment = left
+  value = %fps%
+}
+
