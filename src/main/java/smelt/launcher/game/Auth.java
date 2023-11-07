@@ -1,6 +1,6 @@
-package fr.glauncher.game;
+package smelt.launcher.game;
 
-import fr.glauncher.Controller;
+import smelt.launcher.Controller;
 import fr.litarvan.openauth.microsoft.MicrosoftAuthResult;
 import fr.litarvan.openauth.microsoft.MicrosoftAuthenticationException;
 import fr.litarvan.openauth.microsoft.MicrosoftAuthenticator;

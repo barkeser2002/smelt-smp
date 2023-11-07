@@ -1,4 +1,4 @@
-package fr.glauncher.game;
+package smelt.launcher.game;
 
 import fr.flowarg.flowupdater.FlowUpdater;
 import fr.flowarg.flowupdater.download.DownloadList;
@@ -10,8 +10,8 @@ import fr.flowarg.flowupdater.versions.AbstractForgeVersion;
 import fr.flowarg.flowupdater.versions.ForgeVersionBuilder;
 import fr.flowarg.flowupdater.versions.ForgeVersionType;
 import fr.flowarg.flowupdater.versions.VanillaVersion;
-import fr.glauncher.Controller;
-import fr.glauncher.ui.panels.Launch;
+import smelt.launcher.Controller;
+import smelt.launcher.ui.panels.Launch;
 
 import java.nio.file.Path;
 

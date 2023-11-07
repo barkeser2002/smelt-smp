@@ -1,7 +1,7 @@
-package fr.glauncher.ui.panels;
+package smelt.launcher.ui.panels;
 
-import fr.glauncher.Controller;
-import fr.glauncher.game.Setup;
+import smelt.launcher.Controller;
+import smelt.launcher.game.Setup;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -35,8 +35,8 @@ public class Launch extends JPanel implements ActionListener, ChangeListener
 
 		SpinnerModel ramModel = new SpinnerNumberModel(4096, 1024, 16384, 256);
 
-		this.btnDisconnect = new JButton("Déconnexion");
-		this.btnPlay       = new JButton("Jouer");
+		this.btnDisconnect = new JButton("Disconnect");
+		this.btnPlay       = new JButton("Play");
 		this.ramSelector   = new JSpinner(ramModel);
 		this.progressBar   = new JProgressBar(0, 10000);
 
@@ -46,7 +46,7 @@ public class Launch extends JPanel implements ActionListener, ChangeListener
 		this.btnPlay      .addActionListener( this );
 		this.btnDisconnect.addActionListener( this );
 
-		this.ramSelector.setEditor(new JSpinner.NumberEditor(this.ramSelector, "# Mo"));
+		this.ramSelector.setEditor(new JSpinner.NumberEditor(this.ramSelector, "# MB"));
 		this.ramSelector.addChangeListener(this);
 
 		String ramValue = ctrl.getSaver().get("ram");
@@ -82,7 +82,7 @@ public class Launch extends JPanel implements ActionListener, ChangeListener
 	{
 		if ( e.getSource() == this.btnPlay )
 		{
-			this.ctrl.getLogger().info("Préparation !");
+			this.ctrl.getLogger().info("Hazırlık !");
 
 			new Thread(() -> {
 				Setup.setup( this.ctrl, this );

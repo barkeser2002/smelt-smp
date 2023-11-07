@@ -1,7 +1,7 @@
-package fr.glauncher.game;
+package smelt.launcher.game;
 
 import fr.flowarg.openlauncherlib.NoFramework;
-import fr.glauncher.Controller;
+import smelt.launcher.Controller;
 import fr.theshark34.openlauncherlib.minecraft.GameFolder;
 import org.jetbrains.annotations.NotNull;
 

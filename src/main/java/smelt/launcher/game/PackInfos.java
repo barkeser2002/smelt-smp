@@ -1,4 +1,4 @@
-package fr.glauncher.game;
+package smelt.launcher.game;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

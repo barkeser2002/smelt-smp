@@ -1,4 +1,4 @@
-package fr.glauncher;
+package smelt.launcher;
 
 public class Main
 {

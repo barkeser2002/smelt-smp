@@ -1,8 +1,8 @@
-package fr.glauncher.ui;
+package smelt.launcher.ui;
 
-import fr.glauncher.Controller;
-import fr.glauncher.ui.panels.Launch;
-import fr.glauncher.ui.panels.Login;
+import smelt.launcher.Controller;
+import smelt.launcher.ui.panels.Launch;
+import smelt.launcher.ui.panels.Login;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,7 +26,7 @@ public class Launcher extends JFrame
 		int y  = ((int) screenSize.getHeight() - 512) / 2;
 
 		this.setLocation(x, y);
-		this.setSize(1024, 512);
+		this.setSize(780, 390);
 		this.setTitle("G Launcher");
 		this.setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
 		this.setResizable( false );

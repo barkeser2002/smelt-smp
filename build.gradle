@@ -8,7 +8,7 @@ plugins {
 
 apply plugin: 'org.openjfx.javafxplugin'
 
-group = 'fr.glauncher'
+group = 'smelt.launcher'
 version = '1.0'
 
 repositories {
@@ -34,7 +34,7 @@ javafx {
 }
 
 application {
-    mainClassName = 'fr.glauncher.Main'
+    mainClassName = 'smelt.launcher.Main'
 }
 
 compileJava {

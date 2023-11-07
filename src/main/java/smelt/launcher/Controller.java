@@ -1,10 +1,10 @@
-package fr.glauncher;
+package smelt.launcher;
 
 import fr.flowarg.flowlogger.ILogger;
 import fr.flowarg.flowlogger.Logger;
-import fr.glauncher.game.Auth;
-import fr.glauncher.game.PackInfos;
-import fr.glauncher.ui.Launcher;
+import smelt.launcher.game.Auth;
+import smelt.launcher.game.PackInfos;
+import smelt.launcher.ui.Launcher;
 import fr.theshark34.openlauncherlib.util.Saver;
 
 import java.io.IOException;
@@ -20,14 +20,14 @@ public class Controller
 
 	static {
 		try {
-			pack = PackInfos.create("https://raw.githubusercontent.com/Daudeuf/GLauncher/master/modpack_info.json");
+			pack = PackInfos.create("https://raw.githubusercontent.com/barkeser2002/smelt-smp/launcher/modpack_info.json");
 		} catch (URISyntaxException | IOException e) {
 			throw new RuntimeException(e);
 		}
 	}
 
-	private static final String  NAME  = "glauncher";
-	private static final String  LABEL = "GLauncher";
+	private static final String  NAME  = "smeltsmplauncher";
+	private static final String  LABEL = "smeltsmplauncher";
 
 	private ILogger  logger;
 	private Path     launcherDir;
@@ -48,7 +48,7 @@ public class Controller
 			}
 			catch (IOException e)
 			{
-				this.logger.err("Unable to create launcher folder");
+				this.logger.err("Başlatıcı klasörü oluşturulamıyor");
 				this.logger.printStackTrace(e);
 			}
 		}

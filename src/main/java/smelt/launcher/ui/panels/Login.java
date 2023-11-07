@@ -1,6 +1,6 @@
-package fr.glauncher.ui.panels;
+package smelt.launcher.ui.panels;
 
-import fr.glauncher.Controller;
+import smelt.launcher.Controller;
 
 import javax.swing.*;
 import java.awt.*;
@@ -29,14 +29,14 @@ public class Login extends JPanel implements ActionListener
 		this.imgFond     = getToolkit().getImage ( getClass().getResource("/background.png") );
 		this.ctrl        = ctrl;
 
-		this.cb          = new JCheckBox("Mode Hors Ligne", false);
-		this.lblUsername = new JLabel("Nom d'Utilisateur");
-		this.lblMail     = new JLabel("Adresse Mail");
-		this.lblPassword = new JLabel("Mot De Passe");
+		this.cb          = new JCheckBox("Çevrimdışı mod", false);
+		this.lblUsername = new JLabel("Kullanıcı adı");
+		this.lblMail     = new JLabel("Posta adresi");
+		this.lblPassword = new JLabel("Şifre");
 		this.txtUsername = new JTextField(24);
 		this.txtMail     = new JTextField(48);
 		this.txtPassword = new JPasswordField(24);
-		this.btnValider  = new JButton("Connexion");
+		this.btnValider  = new JButton("Bağlan");
 
 		this.panelMid    = new JPanel();
 		this.panelBot    = new JPanel();
@@ -80,7 +80,7 @@ public class Login extends JPanel implements ActionListener
 			this.panelBot.removeAll();
 			// this.removeAll();
 
-			this.ctrl.getLogger().info(this.cb.isSelected() ? "switch : hors ligne" : "switch :   en ligne");
+			this.ctrl.getLogger().info(this.cb.isSelected() ? "switch : çevrimdışı" : "switch :   çevrimiçi");
 
 			if ( this.cb.isSelected() )
 			{
@@ -147,7 +147,7 @@ public class Login extends JPanel implements ActionListener
 
 		if ( this.ctrl.getAuth().isAuth( true ) )
 		{
-			this.ctrl.getLogger().info("Connexion [ Mode : En Ligne] !");
+			this.ctrl.getLogger().info("Bağlantı [Modu: Çevrimiçi]!");
 			this.ctrl.getLogger().info(this.ctrl.getAuth().getAuthInfos().getUsername());
 			this.ctrl.switchLogin();
 
@@ -156,7 +156,7 @@ public class Login extends JPanel implements ActionListener
 		}
 		else
 		{
-			this.ctrl.getLogger().err("Echec de la connexion [ Mode : En Ligne] !");
+			this.ctrl.getLogger().err("Bağlantı hatası [Modu: Çevrimiçi]!");
 		}
 	}
 
@@ -170,7 +170,7 @@ public class Login extends JPanel implements ActionListener
 
 		if ( this.ctrl.getAuth().isAuth( true ) )
 		{
-			this.ctrl.getLogger().info("Connexion (Auto) [ Mode : En Ligne] !");
+			this.ctrl.getLogger().info("Bağlantı (Otomatik) [Mod: Çevrimiçi]!");
 			this.ctrl.getLogger().info(this.ctrl.getAuth().getAuthInfos().getUsername());
 			this.ctrl.switchLogin();
 
